@@ -3,3 +3,5 @@
 KeyKiss is a symmetric PGP encryption app. The purpose is to be able to decrypt sensitive content on a device that doesn't have PGP installed, such as iOS. 
 
 It's open source and runs offline, and you can ensure this by killing the network connection once it's loaded. Cryptography provided by [OpenPGP.js](https://openpgpjs.org/).
+
+KeyKiss is hosted via GitHub pages [here](https://yunesj.github.io/KeyKiss).
