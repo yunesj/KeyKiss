@@ -67,6 +67,21 @@ document.getElementById('action-button').addEventListener('click', async (event)
   event.target.blur();
 });
 
+const donationModal = document.getElementById('donation-modal');
+donationModal.style.display = 'none';
+document.getElementById('donate-btn').addEventListener('click', async (event) => {
+  donationModal.style.display = 'flex';
+});
+donationModal.querySelector('.close-btn').addEventListener('click', async (event) => {
+  donationModal.style.display = 'none';
+});
+// Close modal whenever it is clicked on (and visible)
+window.addEventListener('click', (e) => {
+  if (e.target === donationModal) {
+    donationModal.style.display = 'none';
+  }
+});
+
 async function handleCryption()  {
   const message = document.getElementById('input-message').value;
   const password = document.getElementById('password').value;

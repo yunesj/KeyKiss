@@ -49,6 +49,12 @@
     </section>
   </main>
 
+  <div id="donation-modal" class="modal">
+      <span class="close-btn">&times;</span>
+      <img src="zcash-qrcode.png" alt="Zcash QR Code" id="qr-code">
+      <span>Thank you for your support!</span>
+  </div>
+
   <footer class="site-footer">
     <p class="footer-text">
       Built with <a href="https://openpgpjs.org" target="_blank">OpenPGP.js</a>, inspired by 
@@ -63,9 +69,9 @@
         GitHub Repo
       </a>
       |
-      <a href="https://www.buymeacoffee.com/your-page" target="_blank" class="footer-link">
-        <span class="emoji">☕️</span> Buy Me a Coffee
-      </a>
+      <button id="donate-btn" type="button" class="footer-link">
+        <span class="emoji">☕️</span> Donate via Zcash
+      </button>
     </p>
   </footer>
   <script type="module" src="app.js"></script>
